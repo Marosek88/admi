@@ -1,0 +1,1 @@
+web: gunicorn admi_django.wsgi
