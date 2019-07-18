@@ -1,0 +1,94 @@
+{% load static %}
+
+<section id="about" class="about-section bg-light">
+    <div class="container">
+        <div class="about-section-menu">
+            <a class="btn btn-primary mx-2 js-scroll-trigger" id="b1" href="#about">
+          Tarcica
+        </a>
+            <a class="btn btn-primary mx-2 js-scroll-trigger" id="b2" href="#about">
+          Podkłady kolejowe
+        </a>
+            <a class="btn btn-primary mx-2 js-scroll-trigger" id="b3" href="#about">
+          Kantówki
+        </a>
+            <a class="btn btn-primary mx-2 js-scroll-trigger" id="b4" href="#about">
+          Coś jeszcze
+        </a>
+        </div>
+        <div class="row about-section-content">
+            <div class="col-12 mx-auto" id="offer">
+
+                <!-- Choose -->
+                <div class="offer">
+                    <h2 class="mb-4 text-center">Oferta</h2>
+                    <p class="text-center">Admi sp. z o.o. oferuje gamę produktów drewnianych. Proszę wybrać produkt, o którym chcieliby Państwo dowiedzieć się wiecej.</p>
+                </div>
+
+                <!-- Tarcica -->
+
+                <div class="container offer invisible" id="offer1">
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center">
+                            <div class="select-item1 select-item-active my-auto" id="submenu1a">Tarcica Dębowa</div><br>
+                            <div class="select-item1 my-auto" id="submenu1b">Tarcica Sosnowa</div>
+                        </div>
+
+                        <div class="col-12 col-md-8 offer-content1" id="offer-content1a">
+                            <h1>Tarcica Dębowa</h1>
+                            <p>Opis tarcicy
+                                <ul>
+                                    <li>punkt 1</li>
+                                    <li>punkt 2</li>
+                                </ul>
+                            </p><img src="{% static 'img/tarcica-debowa.jpg' %}" class="img-fluid">
+                        </div>
+
+                        <div class="col-12 col-md-8 invisible offer-content1" id="offer-content1b">
+                            <h1>Tarcica Sosnowa</h1>
+                            <p>Opis tarcicy
+                                <ul>
+                                    <li>punkt 1</li>
+                                    <li>punkt 2</li>
+                                </ul>
+                            </p><img src="{% static 'img/tarcica-sosnowa.jpg' %}" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podklady -->
+
+                <div class="container offer invisible" id="offer2">
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center">
+                            <div class="select-item2 select-item-active my-auto" id="submenu2a">Podkłady Dębowe</div><br>
+                            <div class="select-item2 my-auto" id="submenu2b">Podkłady Sosnowe</div>
+                        </div>
+                        
+                        <div class="col-12 col-md-8 offer-content2" id="offer-content2a">
+                            <h1>Podkłady Dębowe</h1>
+                            <p>Opis tarcicy
+                                <ul>
+                                    <li>punkt 1</li>
+                                    <li>punkt 2</li>
+                                </ul>
+                            </p><img src="{% static 'img/podklady-debowe.jpg' %}" class="img-fluid">
+                        </div>
+                        
+                        <div class="col-12 col-md-8 offer-content2 invisible" id="offer-content2b">
+                            <h1>Podkłady Sosnowe</h1>
+                            <p>Opis tarcicy
+                                <ul>
+                                    <li>punkt 1</li>
+                                    <li>punkt 2</li>
+                                </ul>
+                            </p><img src="{% static 'img/podklady-sosnowe.jpg' %}" class="img-fluid">
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

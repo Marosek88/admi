@@ -3,6 +3,14 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+ 
+:root {
+  --color1: #181F0D;
+  --color2: #546F01;
+  --color3: #A4BC00;
+  --color4: #D8CABB;
+  --color5: #A88F6B;
+}
 
 #mainNav {
   min-height: 56px;
@@ -12,8 +20,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: var(--color2);
+  border: 1px solid var(--color2);
 }
 
 #mainNav .navbar-toggler:focus {
@@ -21,9 +29,19 @@
 }
 
 #mainNav .navbar-brand {
-  color: #161616;
+  color: var(--color2);
+  font-family: 'Anton', sans-serif;
   font-weight: 700;
-  padding: .9rem 0;
+  padding: .15rem 0;
+}
+
+#mainNav .nav-item {
+  font-weight: 600;
+}
+
+#mainNav .nav-logo-img {
+  height: 50px;
+  margin-right: 10px;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -42,47 +60,56 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.85);
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--color2);
+  }
+  #mainNav .nav-logo-img {
+  height: 80px;
+  margin-right: 20px;
   }
   #mainNav .nav-link {
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    color: var(--color2);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--color3);
   }
   #mainNav .nav-link:active {
-    color: white;
+    color: var(--color2);
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
+    color: var(--color2);
+  }
+  #mainNav.navbar-shrink .nav-logo-img {
+    height: 50px;
+    margin-right: 15px;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #161616;
+    color: var(--color2);
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: var(--color3);
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: var(--color2);
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: var(--color3);
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid var(--color3);
   }
 }
 
@@ -92,8 +119,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 202, 187, 0.1)), color-stop(85%, rgba(216, 202, 187, 0.4)), to(#f8f9fa)), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(216, 202, 187, 0.1) 0%, rgba(216, 202, 187, 0.4) 85%, #f8f9fa 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -113,6 +140,9 @@
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
+  color: #fff;
+  background-color: rgba(168, 143, 107, 0.7);
+  padding: 10px;
 }
 
 @media (min-width: 768px) {
@@ -150,34 +180,103 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: var(--color2);
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: var(--color3);
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: var(--color3);
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: var(--color2) !important;
+}
+
+.btn-active {
+  background-color: var(--color3) !important;
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  /*padding-top: 2rem;*/
+/*  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(85%, rgba(84, 111, 1, 0.9)), to(rgba(84, 111, 1, 0.8)));
+  background: linear-gradient(to bottom, #fff 0%, rgba(84, 111, 1, 0.9) 85%, rgba(84, 111, 1, 0.8) 100%);*/
+  position: relative;
 }
 
-.about-section p {
-  margin-bottom: 5rem;
+.about-section .about-section-menu {
+  height: 15vh;
+  padding: 1rem;
+  text-align: center;
+}
+
+.about-section .about-section-menu .about-section-menu-item {
+  color: #fff;
+  background-color: var(--color2);
+  border-radius: 0.5rem;
+}
+
+.about-section .about-section-content {
+  height: 45vh;
+  padding: 1rem;
+}
+
+.select-item1, .select-item2, .select-item3, .select-item4 {
+  cursor: pointer;
+}
+
+.select-item-active {
+  color: #fff !important;
+  background-color: var(--color2) !important;
+  cursor: default !important;
+}
+
+.select-item1:hover, .select-item2:hover, .select-item3:hover, .select-item4:hover {
+  color: #fff;
+  background-color: var(--color3);
+}
+
+.invisible {
+  display: none;
+}
+
+/*.about-section .about-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}*/
+
+
+@media (min-width: 992px) {
+  .about-section {
+    padding-top: 1rem;
+  }
+  
+  .about-section .about-section-menu {
+    height: 15vh;
+    padding: 1rem;
+  }
+  
+  .about-section .about-section-menu .about-section-menu-item {
+    color: #fff;
+    background-color: var(--color2);
+    border-radius: 0.5rem;
+  }
+  
+  .about-section .about-section-content {
+    height: 75vh;
+    padding: 1rem;
+  }
+  
 }
 
 .projects-section {
-  padding: 10rem 0;
+  /*padding: 10rem 0;*/
 }
 
 .projects-section .featured-text {
