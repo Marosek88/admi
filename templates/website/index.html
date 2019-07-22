@@ -39,10 +39,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Oferta</a>
+            <a class="nav-link js-scroll-trigger" href="#products">Produkty</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Promocje</a>
+            <a class="nav-link js-scroll-trigger" href="#sale">Promocje</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Kontakt</a>
@@ -58,156 +58,25 @@
       <div class="mx-auto text-center">
         <!--<h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>-->
         <h2 class="mx-auto mt-2 mb-5">Oferujemy szeroką gamę surowców z drewna liściastego oraz iglastego.</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Przejdź do naszej oferty</a>
+        <a href="#products" class="btn btn-primary js-scroll-trigger">Przejdź do naszej oferty</a>
       </div>
     </div>
   </header>
 
   <!-- Offer Section -->
-  {% include 'website/offer.html' %}
+  {% include 'website/products.html' %}
 
   <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-    <div class="container">
-
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Oferta 1</h4>
-                <p class="mb-0 text-white-50">Opis pierwszej oferty.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="{% static 'img/demo-image-02.jpg' %}" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Oferta 2</h4>
-                <p class="mb-0 text-white-50">Opis drugiej oferty</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Adres Email" title="Adres Email">
-              </div>
-              <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="phoneNumber" placeholder="Numer Kontaktowy">
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="messageSubject" placeholder="Temat Wiadomości" title="Temat Wiadomości">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" id="messageBody" rows="4" placeholder="Wiadomość"></textarea>
-            </div>
-
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Zezwalam na użycie moich danych kontaktowych w celu skontaktowania się ze mną.
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </section>
+  {% include 'website/sale.html' %}
+  
 
   <!-- Contact Section -->
-  <section class="contact-section bg-black">
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-
-    </div>
-  </section>
+  {% include 'website/contact.html' %}
 
   <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
+  <footer class="small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Dla Admi sp. z o.o. | przez Vars&Sava Devs | w 2019
     </div>
   </footer>
 
@@ -224,60 +93,25 @@
   <script>
     $(function() {
       
-      // Main offer menu
-      
-      $("#b1").click(function() {
-        $("#offer .offer").addClass("invisible");
-        $("#offer1").removeClass("invisible");
-        $(".about-section-menu a").removeClass("btn-active");
-        $("#b1").addClass("btn-active");
-      });
-      $("#b2").click(function() {
-        $("#offer .offer").addClass("invisible");
-        $("#offer2").removeClass("invisible");
-        $(".about-section-menu a").removeClass("btn-active");
-        $("#b2").addClass("btn-active");
-      });
-      $("#b3").click(function() {
-        $("#offer .offer").addClass("invisible");
-        $("#offer3").removeClass("invisible");
-        $(".about-section-menu a").removeClass("btn-active");
-        $("#b3").addClass("btn-active");
-      });
-      $("#b4").click(function() {
-        $("#offer .offer").addClass("invisible");
-        $("#offer4").removeClass("invisible");
-        $(".about-section-menu a").removeClass("btn-active");
-        $("#b4").addClass("btn-active");
+      $('.dropdown-submenu a.submenu-button').on("click", function(e){
+        // $('.submenu-button').next('ul').hide();
+        $(this).parent().siblings().children('ul').hide(400);
+        $(this).next('ul').toggle(400);
+        e.stopPropagation();
+        e.preventDefault();
       });
       
-      // Tarcica submenu
-      $("#submenu1a").click(function() {
-        $(".offer-content1").addClass("invisible");
-        $("#offer-content1a").removeClass("invisible");
-        $(".select-item1").removeClass("select-item-active");
-        $("#submenu1a").addClass("select-item-active");
+      $('.btn-product').on("click", function(e) {
+        product = $(this).data("value");
+        $('.product-page').hide(500);
+        $('#' + product).delay(500).show(500);
+        $(this).parent().parent().hide(400);
+        $('#dropdown-main-button').click();
+        $('#dropdown-main-button').text($(this).text());
+        
+        e.stopPropagation();
+        e.preventDefault();
       });
-      $("#submenu1b").click(function() {
-        $(".offer-content1").addClass("invisible");
-        $("#offer-content1b").removeClass("invisible");
-        $(".select-item1").removeClass("select-item-active");
-        $("#submenu1b").addClass("select-item-active");
-      });
-      
-      // Podklady submenu
-      $("#submenu2a").click(function() {
-        $(".offer-content2").addClass("invisible");
-        $("#offer-content2a").removeClass("invisible");
-        $(".select-item2").removeClass("select-item-active");
-        $("#submenu2a").addClass("select-item-active");
-      });
-      $("#submenu2b").click(function() {
-        $(".offer-content2").addClass("invisible");
-        $("#offer-content2b").removeClass("invisible");
-        $(".select-item2").removeClass("select-item-active");
-        $("#submenu2b").addClass("select-item-active");
-      });   
       
     }); 
   </script>

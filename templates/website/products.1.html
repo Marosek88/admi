@@ -1,0 +1,149 @@
+{% load static %}
+
+<section id="about" class="about-section bg-light">
+    <div class="container">
+        <div class="about-section-menu">
+            <div class="container">
+                <div class="row no-gutters">
+
+
+                    <div class="container">
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-offer dropdown-toggle" type="button" data-toggle="dropdown">Tutorials<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a  class="test btn btn-primary m-0 btn-offer" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="btn btn-primary m-0 btn-offer" tabindex="-1" href="#">2nd level dropdown</a></li>
+                                        <li><a class="btn btn-primary m-0 btn-offer" tabindex="-1" href="#">2nd level dropdown</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a  class="test btn btn-primary m-0 btn-offer" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="btn btn-primary m-0 btn-offer" tabindex="-1" href="#">2nd level dropdown</a></li>
+                                        <li><a class="btn btn-primary m-0 btn-offer" tabindex="-1" href="#">2nd level dropdown</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a  class="test btn btn-primary m-0 btn-offer" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="btn btn-primary m-0 btn-offer" tabindex="-1" href="#">2nd level dropdown</a></li>
+                                        <li><a class="btn btn-primary m-0 btn-offer" tabindex="-1" href="#">2nd level dropdown</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!--<div class="col-6 col-lg-3">-->
+                    <!--    <a class="btn btn-primary btn-offer m-0 js-scroll-trigger btn-active" id="b1" href="#about">-->
+                    <!--      Tarcica-->
+                    <!--    </a>-->
+                    <!--</div>-->
+                    <!--<div class="col-6 col-lg-3">-->
+                    <!--    <a class="btn btn-primary btn-offer m-0 js-scroll-trigger" id="b2" href="#about">-->
+                    <!--      Podkłady kolejowe-->
+                    <!--    </a>-->
+                    <!--</div>-->
+                    <!--<div class="col-6 col-lg-3">-->
+                    <!--    <a class="btn btn-primary btn-offer m-0 js-scroll-trigger" id="b3" href="#about">-->
+                    <!--      Kantówki-->
+                    <!--    </a>-->
+                    <!--</div>-->
+                    <!--<div class="col-6 col-lg-3">-->
+                    <!--    <a class="btn btn-primary btn-offer m-0 js-scroll-trigger" id="b4" href="#about">-->
+                    <!--      Coś jeszcze-->
+                    <!--    </a>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters about-section-content">
+            <div class="col-12" id="offer">
+
+                <!-- Tarcica -->
+
+                <div class="container offer" id="offer1">
+                    <div class="row no-gutters">
+                        <!--<div class="col-12 col-md-4 text-center">-->
+                        <!--    <div class="row no-gutters">-->
+                        <!--        <div class="col-12 my-1">-->
+                        <!--            <button class="btn btn-primary btn-offer m-0 select-item1 btn-active" id="submenu1a">Tarcica Dębowa</button>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--    <div class="row no-gutters">-->
+                        <!--        <div class="col-12 my-1">-->
+                        <!--            <button class="btn btn-primary btn-offer m-0 select-item1" id="submenu1b">Tarcica Sosnowa</button>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+
+                        <div class="col-12 col-md-8 px-3 offer-content1" id="offer-content1a">
+                            <h1>Tarcica Dębowa</h1>
+                            <p>Opis tarcicy
+                                <ul>
+                                    <li>punkt 1</li>
+                                    <li>punkt 2</li>
+                                </ul>
+                            </p><img src="{% static 'img/tarcica-debowa.jpg' %}" class="img-fluid">
+                        </div>
+
+                        <div class="col-12 col-md-8 px-3 invisible offer-content1" id="offer-content1b">
+                            <h1>Tarcica Sosnowa</h1>
+                            <p>Opis tarcicy
+                                <ul>
+                                    <li>punkt 1</li>
+                                    <li>punkt 2</li>
+                                </ul>
+                            </p><img src="{% static 'img/tarcica-sosnowa.jpg' %}" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podklady -->
+
+                <div class="container offer invisible" id="offer2">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-4 text-center">
+
+                            <div class="row no-gutters">
+                                <div class="col-12 my-1">
+                                    <button class="btn btn-primary btn-offer m-0 select-item2 btn-active" id="submenu2a">Podkłady Dębowe</button>
+                                </div>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-12 my-1">
+                                    <button class="btn btn-primary btn-offer m-0 select-item2" id="submenu2b">Podkłady Sosnowe</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-8 px-3 offer-content2" id="offer-content2a">
+                            <h1>Podkłady Dębowe</h1>
+                            <p>Opis tarcicy
+                                <ul>
+                                    <li>punkt 1</li>
+                                    <li>punkt 2</li>
+                                </ul>
+                            </p><img src="{% static 'img/podklady-debowe.jpg' %}" class="img-fluid">
+                        </div>
+
+                        <div class="col-12 col-md-8 px-3 offer-content2 invisible" id="offer-content2b">
+                            <h1>Podkłady Sosnowe</h1>
+                            <p>Opis tarcicy
+                                <ul>
+                                    <li>punkt 1</li>
+                                    <li>punkt 2</li>
+                                </ul>
+                            </p><img src="{% static 'img/podklady-sosnowe.jpg' %}" class="img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

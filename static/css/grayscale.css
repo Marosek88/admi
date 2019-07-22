@@ -119,12 +119,13 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 202, 187, 0.1)), color-stop(85%, rgba(216, 202, 187, 0.4)), to(#f8f9fa)), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(216, 202, 187, 0.1) 0%, rgba(216, 202, 187, 0.4) 85%, #f8f9fa 100%), url("../img/bg-masthead.jpg");
+  background: url("../img/bg-masthead.jpg");
+  background: url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  height: 100vh;
 }
 
 .masthead h1 {
@@ -154,7 +155,6 @@
 
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
     padding: 0;
   }
   .masthead h1 {
@@ -189,7 +189,6 @@
 
 .btn-primary:focus {
   background-color: var(--color3);
-  color: white;
 }
 
 .btn-primary:active {
@@ -200,39 +199,98 @@
   background-color: var(--color3) !important;
 }
 
-.about-section {
+.btn-primary.dropdown-toggle {
+  background-color: var(--color2) !important;
+  border: 0;
+}
+
+.btn-offer-main {
+  border-radius: 0;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-offer {
+  border-radius: 0;
+  border-bottom: solid 1px #fff;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-offer:hover {
+  border-bottom: solid 1px #fff;
+}
+
+@media (max-width: 520px) {
+  .btn-offer-main {
+    font-size: 0.6rem;
+  }
+  .btn-offer {
+    font-size: 0.6rem;
+  }
+  .container {
+    padding: 0;
+  }
+}
+
+.products-section {
   /*padding-top: 2rem;*/
 /*  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(85%, rgba(84, 111, 1, 0.9)), to(rgba(84, 111, 1, 0.8)));
   background: linear-gradient(to bottom, #fff 0%, rgba(84, 111, 1, 0.9) 85%, rgba(84, 111, 1, 0.8) 100%);*/
   position: relative;
+  min-height: 95vh;
 }
 
-.about-section .about-section-menu {
+.products-section .products-section-menu {
   height: 15vh;
   padding: 1rem;
   text-align: center;
 }
 
-.about-section .about-section-menu .about-section-menu-item {
+@media (max-width: 520px) {
+  .products-section .products-section-menu {
+    height: 12vh;
+  }
+}
+
+.products-section .product-img {
+  height: 25vh;
+}
+
+@media (min-width: 768px) {
+  .products-section .product-img {
+    position: sticky;
+    top: 80px;;
+  }
+}
+
+.products-section .products-section-menu .products-section-menu-item {
   color: #fff;
   background-color: var(--color2);
   border-radius: 0.5rem;
 }
 
-.about-section .about-section-content {
-  height: 45vh;
-  padding: 1rem;
+.products-section .products-section-content {
+  height: 85vh;
+  padding: 0 1rem 1rem 1rem;
 }
 
-.select-item1, .select-item2, .select-item3, .select-item4 {
-  cursor: pointer;
+.offer {
+  background-color: rgba(216, 202, 187, 0.4);
+  padding: 15px;
 }
 
-.select-item-active {
-  color: #fff !important;
-  background-color: var(--color2) !important;
-  cursor: default !important;
-}
+/*.select-item1, .select-item2, .select-item3, .select-item4 {*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.select-item-active {*/
+/*  color: #fff !important;*/
+/*  background-color: var(--color2) !important;*/
+/*  cursor: default !important;*/
+/*}*/
 
 .select-item1:hover, .select-item2:hover, .select-item3:hover, .select-item4:hover {
   color: #fff;
@@ -243,7 +301,7 @@
   display: none;
 }
 
-/*.about-section .about-img {
+/*.products-section .about-img {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -253,23 +311,23 @@
 
 
 @media (min-width: 992px) {
-  .about-section {
+  .products-section {
     padding-top: 1rem;
   }
   
-  .about-section .about-section-menu {
-    height: 15vh;
+  .products-section .products-section-menu {
+    height: 10vh;
     padding: 1rem;
   }
   
-  .about-section .about-section-menu .about-section-menu-item {
+  .products-section .products-section-menu .products-section-menu-item {
     color: #fff;
     background-color: var(--color2);
     border-radius: 0.5rem;
   }
   
-  .about-section .about-section-content {
-    height: 75vh;
+  .products-section .products-section-content {
+    height: 85vh;
     padding: 1rem;
   }
   
@@ -286,13 +344,23 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid var(--color2);
   }
 }
 
 .projects-section .project-text {
+  background-color: var(--color2);
+  color: #fff;
   padding: 3rem;
   font-size: 90%;
+}
+
+.projects-section .project-text p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.projects-section .projects-image {
+  height: 30vh;
 }
 
 @media (min-width: 992px) {
@@ -300,16 +368,18 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: var(--color2);
     border-width: .25rem;
     width: 30%;
+  }
+  .projects-section .projects-image {
+    height: auto;
   }
 }
 
 .signup-section {
-  padding: 10rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  padding: 4rem 0;
+  background: url("../img/bg-contact.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -330,11 +400,12 @@
 
 .contact-section {
   padding: 5rem 0 0;
+  background-color: var(--color1);
 }
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid var(--color2);
 }
 
 .contact-section .card h4 {
@@ -345,7 +416,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: var(--color2);
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -375,10 +446,11 @@
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
+  background-color: rgba(100, 100, 100, 0.1);
 }
 
 a {
-  color: #64a19d;
+  color: var(--color2);
 }
 
 a:focus, a:hover {
@@ -391,13 +463,34 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: var(--color2) !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: var(--color2) !important;
 }
 
 footer {
   padding: 5rem 0;
+  background-color: var(--color1);
+}
+
+.row {
+  margin: 0;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 2px;
+  left: 102%;
+  margin-top: -1px;
+}
+
+.dropdown ul {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+  width: 30vw;
 }
