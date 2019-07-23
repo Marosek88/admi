@@ -55,6 +55,26 @@
   background-color: transparent;
 }
 
+#mainNav .nav-lang {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: solid 1.5px #546F01;
+  border-radius: 25%;
+  background-size: cover !important;
+  opacity: 0.5;
+  display: inline-block;
+}
+
+#mainNav .nav-lang:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#mainNav .nav-lang-active {
+  opacity: 1;
+  cursor: default !important;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
