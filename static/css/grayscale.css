@@ -256,14 +256,7 @@
 }
 
 .products-section .product-img {
-  height: 25vh;
-}
-
-@media (min-width: 768px) {
-  .products-section .product-img {
-    position: sticky;
-    top: 80px;;
-  }
+  height: 35vh;
 }
 
 .products-section .products-section-menu .products-section-menu-item {
